@@ -28,7 +28,8 @@ router.get('/', function(req, res, next) {
     // )
 
 
-    res.send('<b> Posted to API </b>');
+    res.json({requestBody: req.body})  
+    // res.send('<b> Posted to API</b>');
     // return null
 
 });
